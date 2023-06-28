@@ -167,12 +167,12 @@ def Decode(adresse):
 
 Btc_live()
 
-# Création du dossier "FakeMiner" s'il n'existe pas déjà
-if not os.path.exists("FakeMiner"):
-    os.makedirs("FakeMiner")
+# Création du dossier "Miner" s'il n'existe pas déjà
+if not os.path.exists("Miner"):
+    os.makedirs("Miner")
 
 # Création du fichier "bank.txt" s'il n'existe pas déjà
-filename = os.path.join("FakeMiner", "bank.txt")
+filename = os.path.join("Miner", "bank.txt")
 if not os.path.exists(filename):
     with open(filename, "w") as fichier:
         fichier.write("Welcome in the bank")
@@ -225,7 +225,7 @@ def Miner():
                   "BTC FOUND", " (", price_btc, "$", ")")
             print(Style.RESET_ALL)
             print("Transfer of Bitcoin to the bank : ", adresse, "...")
-            filename = os.path.join("FakeMiner", "bank.txt")
+            filename = os.path.join("Miner", "bank.txt")
             with open(filename, "a+") as fichier:
                 transaction = str(btc) + " BTC, " + str(price_btc) + "$"
                 fichier.write(str(transaction)+"\n")
@@ -259,7 +259,7 @@ def Menu():
 
 def Bank():
     print(banner_bank)
-    filename = os.path.join("FakeMiner", "bank.txt")
+    filename = os.path.join("Miner", "bank.txt")
     with open(filename, "r") as fichier:
         bank = fichier.read()
         print(bank)
