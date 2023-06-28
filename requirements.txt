@@ -1,0 +1,6 @@
+colorama==0.4.4
+rainbowtext
+pyproject-toml==0.0.10
+bs4
+base58
+secrets==1.0.2
