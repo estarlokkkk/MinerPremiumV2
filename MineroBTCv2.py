@@ -10,7 +10,7 @@ import hashlib
 import binascii
 
 
-just_fix_windows_console()
+"just_fix_windows_console()"
 print(Style.RESET_ALL)
 
 
