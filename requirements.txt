@@ -1,8 +1,0 @@
-colorama==0.4.4
-base58==2.1.1
-bs4
-requests
-rainbowtext==1.2
-hashlib==3.2.2
-binascii==1.2.3
-pyproject-toml==0.0.10
